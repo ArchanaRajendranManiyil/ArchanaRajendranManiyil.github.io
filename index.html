@@ -2,69 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Archana Rajendran – Data Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archana Rajendran Maniyil | Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+    .projects li, .certifications li {
+      margin-bottom: 0.5rem;
+    }
+    .contact a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .resume-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .visual-projects h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #1f2937;
+    }
+    .visual-projects img {
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Archana Rajendran Maniyil</h1>
+    <p>Data Analyst | Regulatory Reporting | Business Intelligence</p>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Archana Rajendran</h1>
-    <p>Data Analyst | Python • R • Power BI • Tableau</p>
-  </section>
-
-  <!-- Introduction -->
-  <section class="intro">
+  <section class="section about">
     <h2>About Me</h2>
     <p>
-      I’m a data analyst with a passion for transforming data into actionable insights. My tools of choice include Python, R, Power BI, and Tableau. 
-      I love working on real-world problems, visual storytelling, and always learning something new.
+      I am a data analyst with 11+ years of experience in financial services, payments, and regulatory reporting. My strengths include building dashboards, leading analytics teams, and ensuring compliance through robust data governance. I'm proficient with tools like SQL, Python, Tableau, Power BI, and Alteryx, and I'm passionate about transforming complex datasets into insights that drive business and policy decisions.
     </p>
+    <a class="resume-button" href="resume.pdf" download>Download My Resume</a>
   </section>
 
-  <!-- Python Project -->
-  <section class="project">
-    <h2>Python: Sleep vs. Productivity</h2>
-    <p>This interactive chart explores how sleep hours correlate with productivity across different countries.</p>
-    <div id="sleepChart" style="height: 600px;"></div>
+  <section class="section visual-projects">
+    <h2>Data Visualizations</h2>
+
+    <h3>Python: Sleep vs. Productivity</h3>
+    <p>Interactive bubble chart visualizing average sleep hours vs. GDP per hour by country.</p>
+    <div id="sleepChart" style="height: 500px;"></div>
+
+    <h3>R: Sentiment in Global News</h3>
+    <p>Sentiment distribution across top international news sources using ggplot2.</p>
+    <img src="images/color_of_the_news.png" alt="R Sentiment Chart"/>
+
+    <h3>Power BI: Payments Dashboard</h3>
+    <p>Real-time dashboard visualizing SWIFT message flows and payment exceptions.</p>
+    <img src="images/powerbi_dashboard_placeholder.png" alt="Power BI dashboard"/>
+
+    <h3>Tableau: Business Metrics</h3>
+    <p>Key business metrics visualized through Tableau story dashboards.</p>
+    <img src="images/tableau_dashboard_placeholder.png" alt="Tableau dashboard"/>
   </section>
 
-  <!-- R Project -->
-  <section class="project">
-    <h2>R: Sentiment in Global News</h2>
-    <p>This visualization shows sentiment trends in major global news headlines using R and ggplot2.</p>
-    <img src="color_of_the_news.png" alt="Sentiment chart" style="max-width: 100%; height: auto;"/>
+  <section class="section contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:archanarajendranmaniyil@hotmail.com">archanarajendranmaniyil@hotmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/archana-rajendran-m" target="_blank">archana-rajendran-m</a></p>
+    <p>Location: Alexandria, VA</p>
   </section>
-
-  <!-- Power BI Placeholder -->
-  <section class="project placeholder">
-    <h2>Power BI</h2>
-    <p>Coming soon: an interactive business dashboard built in Power BI.</p>
-  </section>
-
-  <!-- Tableau Placeholder -->
-  <section class="project placeholder">
-    <h2>Tableau</h2>
-    <p>Coming soon: a visual story built with Tableau Public.</p>
-  </section>
-
-  <!-- Certifications -->
-  <section class="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Google Data Analytics Professional Certificate</li>
-      <li>IBM Data Science Certificate</li>
-      <li>Tableau Desktop Specialist</li>
-      <li>Power BI Data Analyst Associate</li>
-    </ul>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Archana Rajendran</p>
-  </footer>
 
   <script src="sleep_viz.js"></script>
 </body>
